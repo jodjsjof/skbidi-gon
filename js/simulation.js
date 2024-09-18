@@ -188,9 +188,9 @@ const simulation = {
     lastTimeStamp: 0, //tracks time stamps for measuring delta
     delta: 1000 / 60, //speed of game engine //looks like it has to be 16.6666 to match player input
     buttonCD: 0,
-    isHorizontalFlipped: false, //makes some maps flipped horizontally
+    isHorizontalFlipped: true, //makes some maps flipped horizontally
     levelsCleared: 0,
-    difficultyMode: 2, //normal difficulty is 2
+    difficultyMode: 200, //normal difficulty is 2
     difficulty: 0,
     constraint: 0,
     dmgScale: null,
