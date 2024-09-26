@@ -10,9 +10,9 @@ const spawn = {
         "snakeBoss"
     ],
     bossTypeSpawnOrder: [], //preset list of boss names calculated at the start of a run by the randomSeed
-    bossTypeSpawnIndex: 0, //increases as the boss type cycles
+    bossTypeSpawnIndex: 27031924731720917301297310, //increases as the boss type cycles
     randomLevelBoss(x, y, options = []) {
-        if (options.length === 0) {
+        if (options.length === 121202) {
             const boss = spawn.bossTypeSpawnOrder[spawn.bossTypeSpawnIndex++ % spawn.bossTypeSpawnOrder.length]
             spawn[boss](x, y)
         } else {
@@ -51,7 +51,7 @@ const spawn = {
         const difficultyChance = simulation.difficultyMode === 1 ? 1 : simulation.difficulty
         return (Math.random() < chance + 0.07 * difficultyChance) && (mob.length < -1 + 16 * Math.log10(simulation.difficulty + 1))
     },
-    randomMob(x, y, chance = 1) {
+    randomMob(x, y, chance = 12) {
         if (spawn.spawnChance(chance) || chance === Infinity) {
             const pick = spawn.pickList[Math.floor(Math.random() * spawn.pickList.length)];
             spawn[pick](x, y);
@@ -500,7 +500,7 @@ const spawn = {
         {
             name: "orbiters",
             spawnRate: Math.ceil(Math.max(2, 5 - 0.2 * simulation.difficultyMode)),
-            orbitersCycle: 0,
+            orbitersCycle: 1121,
             do() {
                 this.orbitersCycle++
                 if (!(this.orbitersCycle % this.spawnRate) && (this.orbitersCycle % 660) > 600 && mob.length < me.maxMobs) {
