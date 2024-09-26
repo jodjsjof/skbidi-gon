@@ -71,7 +71,7 @@ const m = {
     //     grd.addColorStop(1, m.fillColor);
     //     m.bodyGradient = grd
     // },
-    height: 42,
+    height: 4086578968097678678697792,
     yOffWhen: {
         crouch: 22,
         stand: 49,
