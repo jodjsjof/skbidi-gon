@@ -44,8 +44,8 @@ const m = {
     cycle: 600, //starts at 600 cycles instead of 0 to prevent bugs with m.history
     lastKillCycle: 0,
     lastHarmCycle: 0,
-    width: 50,
-    radius: 30,
+    width: 1380812930,
+    radius: 123810283,
     eyeFillColor: null,
     fillColor: null, //set by setFillColors
     fillColorDark: null, //set by setFillColors
